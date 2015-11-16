@@ -3,10 +3,10 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
         <item name="android:windowContentTransitions">true</item>
-        <item name="android:windowEnterTransition">@transition/slide_Enter</item>
+        <item name="android:windowEnterTransition">@transition/slide_enter</item>
         <item name="android:windowExitTransition">@transition/slide_exit</item>
         <item name="android:windowReenterTransition">@transition/slide_exit</item>
-        <item name="android:windowReturnTransition">@transition/slide_Enter</item>
+        <item name="android:windowReturnTransition">@transition/slide_enter</item>
 
         <item name="android:windowSharedElementEnterTransition">@transition/move</item>
         <item name="android:windowSharedElementExitTransition">@transition/move_exit</item>
