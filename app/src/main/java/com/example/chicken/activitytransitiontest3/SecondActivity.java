@@ -16,6 +16,7 @@ public class SecondActivity extends Activity {
         findViewById(R.id.light_gray).setTransitionName(MainActivity.mShareLightGray);
         findViewById(R.id.gray).setTransitionName(MainActivity.mShareGray);
         findViewById(R.id.dark_gray).setTransitionName(MainActivity.mShareDarkGray);
+        findViewById(R.id.black).setTransitionName(MainActivity.mShareBlack);
 
     }
 

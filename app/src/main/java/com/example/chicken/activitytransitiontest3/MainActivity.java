@@ -16,12 +16,15 @@ public class MainActivity extends Activity {
     private View mShareViewLightGray;
     private View mShareViewGray;
     private View mShareViewDarkGray;
+    private View mShareViewBlack;
     public static String mShareLightGray = "light_gray";
     public static String mShareGray = "gray";
     public static String mShareDarkGray = "dark_gray";
+    public static String mShareBlack = "black";
     private ImageView mViewLightGray;
     private ImageView mViewGray;
     private ImageView mViewDarkGray;
+    private ImageView mViewBlack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +53,12 @@ public class MainActivity extends Activity {
         mShareViewLightGray = findViewById(R.id.light_gray);
         mShareViewGray = findViewById(R.id.gray);
         mShareViewDarkGray = findViewById(R.id.dark_gray);
+        mShareViewBlack = findViewById(R.id.black);
 
         mViewLightGray = (ImageView)mShareViewLightGray;
         mViewGray = (ImageView)mShareViewGray;
         mViewDarkGray = (ImageView)mShareViewDarkGray;
+        mViewBlack = (ImageView)mShareViewBlack;
         //非表示化
         setVisibility(View.INVISIBLE);
 
@@ -68,7 +73,8 @@ public class MainActivity extends Activity {
                 Pair<View, String> shareLightGray = Pair.create(mShareViewLightGray, mShareLightGray);
                 Pair<View, String> shareGray = Pair.create(mShareViewGray, mShareGray);
                 Pair<View, String> shareDarkGray = Pair.create(mShareViewDarkGray, mShareDarkGray);
-                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, shareLightGray, shareGray, shareDarkGray).toBundle();
+                Pair<View, String> shareBlack = Pair.create(mShareViewBlack, mShareBlack);
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, shareLightGray, shareGray, shareDarkGray, shareBlack).toBundle();
                 startActivity(intent, bundle);
                 //非表示化
                 setVisibility(View.INVISIBLE);
@@ -82,6 +88,7 @@ public class MainActivity extends Activity {
         mViewLightGray.setVisibility(visibility);
         mViewGray.setVisibility(visibility);
         mViewDarkGray.setVisibility(visibility);
+        mViewBlack.setVisibility(visibility);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

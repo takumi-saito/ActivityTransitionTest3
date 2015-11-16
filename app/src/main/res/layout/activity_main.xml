@@ -46,5 +46,12 @@
         android:layout_marginLeft="450dp"
         android:background="@drawable/dark_gray"
         android:transitionName="dark_gray"/>
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="500dp"
+        android:background="@drawable/black"
+        android:transitionName="black"/>
 
 </FrameLayout>
