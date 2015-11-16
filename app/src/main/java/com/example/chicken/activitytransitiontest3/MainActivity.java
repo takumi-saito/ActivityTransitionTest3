@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 
         Button button = (Button)findViewById(R.id.button);
         Slide slide1 = new Slide();
-        slide1.setDuration(2000);
+        slide1.setDuration(1000);
         //左方向へスライド
         slide1.setSlideEdge(Gravity.LEFT);
 
