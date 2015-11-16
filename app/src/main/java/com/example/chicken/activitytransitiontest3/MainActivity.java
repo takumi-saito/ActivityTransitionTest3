@@ -26,7 +26,10 @@ public class MainActivity extends Activity {
 
         Button button = (Button)findViewById(R.id.button);
         Slide slide1 = new Slide();
+        //画面遷移アニメーション処理時間
         slide1.setDuration(1000);
+        //画面遷移アニメーションディレイ
+        slide1.setStartDelay(1000);
         //左方向へスライド
         slide1.setSlideEdge(Gravity.LEFT);
 
