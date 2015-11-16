@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/slide_enter</item>
+        <item name="android:windowExitTransition">@transition/slide_exit</item>
+        <item name="android:windowReenterTransition">@transition/slide_exit</item>
+        <item name="android:windowReturnTransition">@transition/slide_enter</item>
+
+        <item name="android:windowSharedElementEnterTransition">@transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@transition/move_exit</item>
+        <item name="android:windowSharedElementReenterTransition">@transition/move_reenter</item>
+        <item name="android:windowSharedElementReturnTransition">@transition/move_return</item>
+        <!--<item name="android:windowSharedElementReenterTransition">@transition/move</item>-->
+        <!--<item name="android:windowSharedElementReturnTransition">@transition/move</item>-->
     </style>
 </resources>

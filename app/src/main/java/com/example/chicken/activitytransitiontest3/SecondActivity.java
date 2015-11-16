@@ -14,6 +14,8 @@ public class SecondActivity extends Activity {
 
         //エレメント名をセット
         findViewById(R.id.light_gray).setTransitionName(MainActivity.mShareLightGray);
+        findViewById(R.id.gray).setTransitionName(MainActivity.mShareGray);
+        findViewById(R.id.dark_gray).setTransitionName(MainActivity.mShareDarkGray);
 
     }
 
