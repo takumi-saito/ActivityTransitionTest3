@@ -13,7 +13,7 @@ public class SecondActivity extends Activity {
         setContentView(R.layout.activity_second);
 
         //エレメント名をセット
-        findViewById(R.id.image).setTransitionName(MainActivity.mShareEle);
+        findViewById(R.id.light_gray).setTransitionName(MainActivity.mShareLightGray);
 
     }
 

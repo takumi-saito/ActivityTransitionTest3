@@ -2,23 +2,20 @@ package com.example.chicken.activitytransitiontest3;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.Fade;
 import android.transition.Slide;
 import android.util.Pair;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
 
     private View mShareView;
-    public static String mShareEle = "image";
+    public static String mShareLightGray = "light_gray";
 
 
     @Override
@@ -30,6 +27,7 @@ public class MainActivity extends Activity {
         Button button = (Button)findViewById(R.id.button);
         Slide slide1 = new Slide();
         slide1.setDuration(2000);
+        //左方向へスライド
         slide1.setSlideEdge(Gravity.LEFT);
 
         Slide slide2 = new Slide();
@@ -40,14 +38,14 @@ public class MainActivity extends Activity {
         getWindow().setExitTransition(slide1);
         getWindow().setEnterTransition(slide1);
 
-        mShareView = findViewById(R.id.image);
+        mShareView = findViewById(R.id.light_gray);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                    Pair<View, String> share = Pair.create(mShareView, mShareEle);
+                    Pair<View, String> share = Pair.create(mShareView, mShareLightGray);
                 Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, share).toBundle();
                 startActivity(intent, bundle);
 
