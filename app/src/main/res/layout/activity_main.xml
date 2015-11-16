@@ -22,8 +22,22 @@
         android:id="@+id/light_gray"
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="360dp"
+        android:layout_marginLeft="300dp"
         android:background="@drawable/light_gray"
         android:transitionName="light_gray"/>
+    <ImageView
+        android:id="@+id/gray"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="330dp"
+        android:background="@drawable/gray"
+        android:transitionName="gray"/>
+    <ImageView
+        android:id="@+id/dark_gray"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="360dp"
+        android:background="@drawable/dark_gray"
+        android:transitionName="dark_gray"/>
 
 </RelativeLayout>

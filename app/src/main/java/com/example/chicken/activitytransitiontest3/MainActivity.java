@@ -14,9 +14,12 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    private View mShareView;
+    private View mShareViewLightGray;
+    private View mShareViewGray;
+    private View mShareViewDarkGray;
     public static String mShareLightGray = "light_gray";
-
+    public static String mShareGray = "gray";
+    public static String mShareDarkGray = "dark_gray";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,7 @@ public class MainActivity extends Activity {
 
         Button button = (Button)findViewById(R.id.button);
         Slide slide1 = new Slide();
-        slide1.setDuration(2000);
+        slide1.setDuration(500);
         //左方向へスライド
         slide1.setSlideEdge(Gravity.LEFT);
 
@@ -38,15 +41,21 @@ public class MainActivity extends Activity {
         getWindow().setExitTransition(slide1);
         getWindow().setEnterTransition(slide1);
 
-        mShareView = findViewById(R.id.light_gray);
+        mShareViewLightGray = findViewById(R.id.light_gray);
+        mShareViewGray = findViewById(R.id.gray);
+        mShareViewDarkGray = findViewById(R.id.dark_gray);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                    Pair<View, String> share = Pair.create(mShareView, mShareLightGray);
-                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, share).toBundle();
+                
+                Pair<View, String> shareLightGray = Pair.create(mShareViewLightGray, mShareLightGray);
+                Pair<View, String> shareGray = Pair.create(mShareViewGray, mShareGray);
+                Pair<View, String> shareDarkGray = Pair.create(mShareViewDarkGray, mShareDarkGray);
+                
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, shareLightGray, shareGray, shareDarkGray).toBundle();
                 startActivity(intent, bundle);
 
             }

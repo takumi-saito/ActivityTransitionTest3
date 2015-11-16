@@ -29,5 +29,19 @@
         android:layout_marginLeft="-300dp"
         android:background="@drawable/light_gray"
         android:transitionName="light_gray"/>
+    <ImageView
+        android:id="@+id/gray"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-270dp"
+        android:background="@drawable/gray"
+        android:transitionName="gray"/>
+    <ImageView
+        android:id="@+id/dark_gray"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-240dp"
+        android:background="@drawable/dark_gray"
+        android:transitionName="dark_gray"/>
 
 </RelativeLayout>
