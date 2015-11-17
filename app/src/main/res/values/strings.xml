@@ -4,8 +4,15 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_second">SecondActivity</string>
-    <integer name="duration">500</integer>
-    <integer name="startDelay">160</integer>
-
+    <integer name="duration">1000</integer>
+    <integer name="first_startDelay">0</integer>
+    <integer name="second_startDelay">100</integer>
+    <integer name="third_startDelay">200</integer>
+    <integer name="fourth_startDelay">300</integer>
+    <integer name="first_startDelay2">120</integer>
+    <integer name="second_startDelay2">220</integer>
+    <integer name="third_startDelay2">320</integer>
+    <integer name="fourth_startDelay2">420</integer>
+    <integer name="startDelay">200</integer>
 
 </resources>

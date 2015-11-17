@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/duration" >
+<transitionSet
+    android:transitionOrdering="together"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/duration" android:startDelay="@integer/first_startDelay">
+        <changeImageTransform/>
         <changeBounds/>
         <changeTransform/>
         <changeClipBounds/>
-        <changeImageTransform/>
+        <targets>
+            <target android:targetId="@+id/light_gray"/>
+        </targets>
     </transitionSet>
+    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/duration" android:startDelay="@integer/second_startDelay">
+        <changeImageTransform/>
+        <changeBounds/>
+        <changeTransform/>
+        <changeClipBounds/>
+        <targets>
+            <target android:targetId="@+id/gray"/>
+        </targets>
+    </transitionSet>
+    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/duration" android:startDelay="@integer/third_startDelay">
+        <changeImageTransform/>
+        <changeBounds/>
+        <changeTransform/>
+        <changeClipBounds/>
+        <targets>
+            <target android:targetId="@+id/dark_gray"/>
+        </targets>
+    </transitionSet>
+    <transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/duration" android:startDelay="@integer/fourth_startDelay">
+        <changeImageTransform/>
+        <changeBounds/>
+        <changeTransform/>
+        <changeClipBounds/>
+        <targets>
+            <target android:targetId="@+id/black"/>
+        </targets>
+    </transitionSet>
+
+</transitionSet>
