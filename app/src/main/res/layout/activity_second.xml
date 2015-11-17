@@ -9,12 +9,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Second"
+        android:text="Sub"
         android:id="@+id/textView"
-        android:layout_marginLeft="150dp"
+        android:layout_gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="166dp" />
+        android:layout_marginBottom="100dp" />
 
     <ImageView
         android:id="@+id/light_gray"
@@ -39,7 +39,7 @@
         android:transitionName="dark_gray"/>
     <ImageView
         android:id="@+id/black"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="-50dp"
         android:background="@drawable/black"

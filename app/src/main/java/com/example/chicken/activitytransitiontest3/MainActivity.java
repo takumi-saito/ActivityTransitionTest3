@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +28,8 @@ public class MainActivity extends Activity {
     private ImageView mViewDarkGray;
     private ImageView mViewBlack;
 
-    @Override
+    private static String TAG = MainActivity.class.getName();
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -50,6 +53,16 @@ public class MainActivity extends Activity {
 //        getWindow().setExitTransition(slide1);
 //        getWindow().setEnterTransition(slide1);
 
+
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+        int dispWidth = dm.widthPixels;
+        int dispHeight = dm.heightPixels;
+
+        //1080px ( xxhdpi ) ：フルHD端末
+        Log.v(TAG, "幅"+String.valueOf(dispWidth));
+        Log.v(TAG, "高さ"+String.valueOf(dispHeight));
+
         mShareViewLightGray = findViewById(R.id.light_gray);
         mShareViewGray = findViewById(R.id.gray);
         mShareViewDarkGray = findViewById(R.id.dark_gray);
@@ -59,6 +72,7 @@ public class MainActivity extends Activity {
         mViewGray = (ImageView)mShareViewGray;
         mViewDarkGray = (ImageView)mShareViewDarkGray;
         mViewBlack = (ImageView)mShareViewBlack;
+
         //非表示化
         setVisibility(View.INVISIBLE);
 
