@@ -42,31 +42,31 @@
 
     <ImageView
         android:id="@+id/light_gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="400dp"
-        android:background="@drawable/light_gray"
+        android:background="#ff2057"
         android:transitionName="light_gray"/>
     <ImageView
         android:id="@+id/gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="400dp"
-        android:background="@drawable/gray"
+        android:background="#ff00fb"
         android:transitionName="gray"/>
     <ImageView
         android:id="@+id/dark_gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="400dp"
-        android:background="@drawable/dark_gray"
+        android:background="#ff3cfb"
         android:transitionName="dark_gray"/>
     <ImageView
         android:id="@+id/black"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="400dp"
-        android:background="@drawable/black"
+        android:background="#ff78fb"
         android:transitionName="black"/>
 
 </FrameLayout>

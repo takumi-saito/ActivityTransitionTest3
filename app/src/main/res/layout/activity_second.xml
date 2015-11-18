@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondActivity"
-    android:background="#ff8dda">
+    android:background="#ffb4fb">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,30 +18,30 @@
 
     <ImageView
         android:id="@+id/light_gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-90dp"
-        android:background="@drawable/light_gray"
+        android:layout_marginLeft="-45dp"
+        android:background="#ff2057"
         android:transitionName="light_gray"/>
     <ImageView
         android:id="@+id/gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-90dp"
-        android:background="@drawable/gray"
+        android:layout_marginLeft="-45dp"
+        android:background="#ff00fb"
         android:transitionName="gray"/>
     <ImageView
         android:id="@+id/dark_gray"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-90dp"
-        android:background="@drawable/dark_gray"
+        android:layout_marginLeft="-45dp"
+        android:background="#ff3cfb"
         android:transitionName="dark_gray"/>
     <ImageView
         android:id="@+id/black"
-        android:layout_width="90dp"
+        android:layout_width="45dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-90dp"
-        android:background="@drawable/black"
+        android:layout_marginLeft="-45dp"
+        android:background="#ff78fb"
         android:transitionName="black"/>
 </FrameLayout>
