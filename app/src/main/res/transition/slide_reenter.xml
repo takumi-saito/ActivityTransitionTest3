@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<slide xmlns:android="http://schemas.android.com/apk/res/android" android:slideEdge="left" android:duration="@integer/duration" android:startDelay="400"/>
+<slide xmlns:android="http://schemas.android.com/apk/res/android" android:slideEdge="left" android:duration="@integer/duration" android:startDelay="500"/>
